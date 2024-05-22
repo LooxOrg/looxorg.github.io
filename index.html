@@ -1,127 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>LooxOrg</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: rgb(99, 151, 255);
-            background: radial-gradient(circle, rgba(99, 151, 255, 1) 0%, rgba(33, 133, 255, 1) 100%);
-            color: #333;
-        }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="style/style.css">
+  <link rel="stylesheet" href="style/base.css">
 
-        header {
-            background: rgb(99, 110, 255);
-            background: linear-gradient(101deg, rgba(99, 110, 255, 1) 0%, rgba(33, 104, 255, 1) 100%);
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-
-        nav {
-            background-color: #333;
-            box-shadow: 0 0 10px rgba(0, 0, 0);
-            padding: 15px;
-            text-align: center;
-        }
-
-        nav a {
-            color: #fff;
-            text-decoration: none;
-            margin: 0 10px;
-            transition: color 0.3s ease-in-out;
-            border-radius: 10px;
-            padding: 5px 10px;
-        }
-
-        nav a:hover {
-            color: #66d3ff;
-            background-color: rgba(255, 255, 255, 0.1);
-        }
-
-        .container {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-
-        .card {
-            background-color: #fff;
-            padding: 20px;
-            border-radius: 15px;
-            margin-bottom: 20px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease-in-out;
-        }
-
-        .card:hover {
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-        }
-
-        footer {
-            background-color: #333;
-            color: #fff;
-            text-align: center;
-            padding: 20px;
-            width: 100%;
-            box-sizing: border-box;
-            /* Ensure padding and border are included in the width */
-            box-shadow: 0 0 10px rgba(0, 0, 0);
-            left: 0;
-            bottom: 0;
-        }
-    </style>
 </head>
-
 <body>
-    <header>
-        <img src="looxText.png" alt="LooxOrg Logo">
-    </header>
+  <header class="top-bar foreground-bar">
+    <img src="looxText.png" alt="loox" class="logo">
+    <a href="https://discord.gg/Kv3XFv73eM" class="button">Discord</a>
+  </header>
+  
+  <div class="content">
+    <h1>About Us</h1>
+    <p>Loox is dedicated to provide a maximum of free software.</p>
+    <p>Why provide free software? Because of big corporation. They have a Monooly way too big on us.</p>
+    <p>Why Us ? Because we provide free software and customizable software for our users. Its all synced together.</p>    
 
-    <nav>
-        <a href="#about">About Us</a>
-        <a href="#projects">Projects</a>
-        <a href="https://discord.gg/Kv3XFv73eM">Discord</a>
-    </nav>
-
-    <div class="container">
-        <section id="about" class="card">
-            <h2>About Us</h2>
-            <p>Loox is dedicated to providing free software, to empower it's users.
-            </p>
-        </section>
-
-        <section id="projects">
-            <h2>Projects</h2>
-            <div class="card" onclick="window.location.href='';">
-                <h3>LooxOS</h3>
-                <p>LooxOS is an Web-OS forked from OrchidOS. This OS is higly customizable it can be installed on PC
-                    (Laptop, and desktop), Phone and Tablet (Android, This might not be possible on every phone due to
-                    specific brand restriction, and SoC linux compatibility), also a Smart TV version but for computer and embedded devices.</p>
-            </div>
-            <div class="card" onclick="window.location.href='';">
-                <h3>Noted</h3>
-                <p>Noted is a software for school (mainly for RP school) thats has all the basic features, like homework, timetable, and more.</p>
-            </div>
-            <div class="card" onclick="window.location.href='';">
-                <h3>Connected</h3>
-                <p>Connected is a software for smart homes. </p>
-            </div>
-            <div class="card" onclick="document.location.href='https:\/\/www.npmjs.com/package/active-web';">
-                <h3>Active Web</h3>
-                <p>Active Web is a NPM package to easily make a website with an API.</p>
-            </div>
-        </section>
+    <h1>Our Projects</h1>
+    <div class="cards">
+      <div class="card">
+        <img src="loox-os.png" alt="">
+        <h2>LooxOS</h2>
+        <p>LooxOS is a project that I am working on alone (for now). I am currently working on it.</p>
+        <button onclick="window.location.href='/loox-os/'" class="button-card">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="yodel.png" alt="">
+        <h2>Yodel</h2>
+        <p>Yodel is a Discord-like application. With highly customizable features.</p>
+        <button onclick="window.location.href='/yodel/'" class="button-card">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="" alt="">
+        <h2>Loox Games</h2>
+        <p>Loox Games is gonna be one of the only source of revenue for</p>
+        <button onclick="window.location.href='/loox-games/'" class="button-card">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="" alt="">
+        <h2>Loox Office</h2>
+        <p>Loox Office is the equivalent of Microsoft Office, Google Docs & Apple Pages.</p>
+        <button onclick="window.location.href='/loox-office/'" class="button-card">Learn More</button>
+      </div>
+      <div class="card">
+        <img src="" alt="">
+        <h2>FlowLess Engine </h2>
+        <p>FlowLess Engine is a game engine. Using visual scripting, Anyone can make games.</p>
+        <button onclick="window.location.href='/flowless-engine/'" class="button-card">Learn More</button>
+      </div>
     </div>
 
-    <footer>
-        &copy; 2024 Loox. All rights reserved.
-    </footer>
+  </div>
+  
+  <footer class="bot-bar foreground-bar">
+    &copy; 2024 Loox. All rights reserved.
+  </footer>
 </body>
-
 </html>
