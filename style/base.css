@@ -35,8 +35,8 @@ footer.bot-bar {
   display: flex;
   align-items: center;
   height: 70px;
-  width: 100%;
-  padding: 0 10px;
+  width: calc(100% - 10px);
+  padding: 0 0 0 10px;
 }
 
 .logo {
@@ -45,6 +45,7 @@ footer.bot-bar {
 .content {
   max-width: 100vw;
   margin: 20px auto;
+  width: calc(100% - 40px);
   padding: 0 20px;
 }
 
